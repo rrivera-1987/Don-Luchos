@@ -82,30 +82,31 @@
                 <hr class="divider divider-light" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5 service-item">
-                            <a href="catering.html"></a>
-                            <div class="mb-2"><i class="fs-1 fa-solid fa-utensils"></i></div>
-                            <h3 class="h4 mb-2">Catering</h3>
-                            <p class="text-white mb-0">Experience a delightful culinary journey with our exceptional catering service!</p>
-                        </div>
+                        <a href="catering.html" class="service-item-link text-white">
+                            <div class="mt-5 service-item">
+                                <div class="mb-2"><i class="fs-1 fa-solid fa-utensils"></i></div>
+                                <h3 class="h4 mb-2">Catering</h3>
+                                <p class="text-white mb-0">Experience a delightful culinary journey with our exceptional catering service!</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5 service-item">
-                            <a href="foodtruck.html"></a>
-                            <div class="mb-2"><i class="fs-1 fa-solid fa-truck-fast"></i></div>
-                            <h3 class="h4 mb-2">Food Truck</h3>
-                            <p class="text-white mb-0">Experience the best flavors on wheels! Book our Food Truck 
-                                for your next event or find us in the neighborhood.</p>
-                        </div>
+                        <a href="foodtruck.html" class="service-item-link text-white">
+                            <div class="mt-5 service-item">
+                                <div class="mb-2"><i class="fs-1 fa-solid fa-utensils"></i></div>
+                                <h3 class="h4 mb-2">Food Truck</h3>
+                                <p class="text-white mb-0">Experience the best flavors on wheels! Book our Food Truck for your next event or find us in the neighborhood.</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center">
-                        <div class="mt-5 service-item">
-                            <a href="delivery.html"></a>
-                            <div class="mb-2"><i class="fs-1 fa-solid fa-car-side"></i></div>
-                            <h3 class="h4 mb-2">Delivery</h3>
-                            <p class="text-white mb-0">Enjoy our delicious food from the comfort of your home. 
-                                Order delivery or choose convenient pick-up options.</p>
-                        </div>
+                        <a href="delivery.html" class="service-item-link text-white">
+                            <div class="mt-5 service-item">
+                                <div class="mb-2"><i class="fs-1 fa-solid fa-car-side"></i></div>
+                                <h3 class="h4 mb-2">Delivery</h3>
+                                <p class="text-white mb-0">Enjoy our delicious food from the comfort of your home. Order delivery or choose convenient pick-up options.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -183,9 +184,10 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="text-white mt-0">Let's Get In Touch!</h2>
-                        <hr class="divider" />
-                        <p class="text-white mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
+                        <h2 class="text-white mt-0">Contact Us</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white mb-5">Have any questions or inquiries? We'd love to hear from you! 
+                            Get in touch with us and we'll be happy to assist you with anything related to our restaurant, menu, or special events.</p>                        
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -270,6 +272,11 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- Add jQuery, Popper.js, and Bootstrap JavaScript plugins -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
         <script>
             fetch('about.html')
                 .then(response => response.text())

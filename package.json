@@ -27,5 +27,10 @@
   "homepage": "https://github.com/rrivera-1987/Don-Luchos#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "jquery": "^3.7.0",
+    "popper.js": "^1.16.1"
   }
 }

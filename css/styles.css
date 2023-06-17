@@ -109,6 +109,10 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.service-item-link {
+  text-decoration: none;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
