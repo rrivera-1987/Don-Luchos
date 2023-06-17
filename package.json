@@ -1,0 +1,31 @@
+{
+  "name": "don_luchos",
+  "version": "1.0.0",
+  "description": "\"Restaurant concept for Portfolio Project\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrivera-1987/Don-Luchos.git"
+  },
+  "keywords": [
+    "restaurant",
+    "food",
+    "catering",
+    "delivery",
+    "menu"
+  ],
+  "author": "Ramon A. Rivera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrivera-1987/Don-Luchos/issues"
+  },
+  "homepage": "https://github.com/rrivera-1987/Don-Luchos#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
