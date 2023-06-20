@@ -57,3 +57,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+fetch('about.html')
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector('#about p.text-white-75.mb-4').innerHTML = data;
+    })
+    .catch(error => console.log(error));
