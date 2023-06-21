@@ -11,6 +11,7 @@
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
+    "terser": "terser dist/*.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "usemin": "usemin menu.html -d dist --htmlmin -o dist/menu.html && usemin catering.html -d dist --htmlmin -o dist/catering.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin delivery.html -d dist --htmlmin -o dist/delivery.html && usemin foodtruck.html -d dist --htmlmin -o dist/foodtruck.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
@@ -42,6 +43,7 @@
     "parallelshell": "3.0.1",
     "rimraf": "^3.0.2",
     "sass": "^1.63.4",
+    "terser": "^5.18.1",
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
