@@ -4,10 +4,15 @@
   "description": "\"Restaurant concept for Portfolio Project\"",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin menu.html -d dist --htmlmin -o dist/menu.html && usemin catering.html -d dist --htmlmin -o dist/catering.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin delivery.html -d dist --htmlmin -o dist/delivery.html && usemin foodtruck.html -d dist --htmlmin -o dist/foodtruck.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
@@ -29,14 +34,18 @@
   },
   "homepage": "https://rrivera-1987.github.io/Don-Luchos/",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
-    "sass": "^1.63.4"
+    "rimraf": "^3.0.2",
+    "sass": "^1.63.4",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0",
+    "bootstrap": "^4.6.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.0",
     "popper.js": "^1.16.1"
